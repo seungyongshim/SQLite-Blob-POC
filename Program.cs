@@ -13,7 +13,7 @@ namespace SQLite_Blob_POC
 
             users.InitializeDatabase();
 
-            users.Insert(new UserInformation
+            users.Insert(new User
             {
                 BLOB = new byte[] {0x00, 0x00, 0x00, 0x01},
                 USER_NAME = "Hong",

@@ -23,7 +23,7 @@ namespace SQLite_Blob_POC
             }
         }
 
-        public void Delete(UserInformation userInformation)
+        public void Delete(User userInformation)
         {
             using (var c = DbConnect())
             {
@@ -32,12 +32,12 @@ namespace SQLite_Blob_POC
             }
         }
 
-        public IEnumerable<UserInformation> FindAll()
+        public IEnumerable<User> FindAll()
         {
             using (var c = DbConnect())
             {
                 c.Open();
-                return c.Query<UserInformation>("SELECT * FROM USERS");
+                return c.Query<User>("SELECT * FROM USERS");
             }
         }
 
@@ -63,7 +63,7 @@ namespace SQLite_Blob_POC
             }
         }
 
-        public void Insert(UserInformation user)
+        public void Insert(User user)
         {
             using (var c = DbConnect())
             {

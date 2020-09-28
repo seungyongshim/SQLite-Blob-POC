@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace SQLite_Blob_POC
 {
-    public class UserInformation
+    public class User
     {
         public byte[] BLOB { get; set; }
         public string PASSWORD { get; set; }
