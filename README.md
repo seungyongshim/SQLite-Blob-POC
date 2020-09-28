@@ -27,7 +27,7 @@ using (var c = conn())
     createTable.ExecuteReader();
 }
 ```
-![image](images/a42ee146b978bc7975394051c1e4756e.png)
+![image](Images/a42ee146b978bc7975394051c1e4756e.png)
 
 ## 삽입
 ```csharp
@@ -50,7 +50,7 @@ Insert(new UserInformation
 });
 ```
 
-![image](images/154888fc4bdd5b4f120f0a1103cbad9b.png)
+![image](Images/154888fc4bdd5b4f120f0a1103cbad9b.png)
 
 ## 가져오기
 ```csharp
@@ -68,4 +68,4 @@ foreach (var user in users.FindAll())
     Console.WriteLine(user.ToString());
 }
 ```
-![image](images/3d48760cd5241c2eaec6a53f7a8fbaf2.png)
+![image](Images/3d48760cd5241c2eaec6a53f7a8fbaf2.png)
